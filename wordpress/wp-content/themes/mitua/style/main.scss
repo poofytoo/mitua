@@ -1,0 +1,22 @@
+// main.scss
+
+html, body {
+  padding: 0;
+  margin: 0 !important;
+}
+
+body {
+  background-color: #ccc;
+}
+
+.site-header {
+  background-color: blue;
+
+  li {
+    display: inline-block;
+  }
+
+  li ul {
+    display: none;
+  }
+}

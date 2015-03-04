@@ -7,6 +7,11 @@
 
 get_header(); ?>
 
+
+<div class="row">
+  <div class="large-12 columns">Body Goes Here!</div>
+</div>
+
 <div class="footer">
  This is the front page
     <?php if ( have_posts() ) : ?>
