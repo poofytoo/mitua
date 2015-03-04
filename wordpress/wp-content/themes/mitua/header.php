@@ -22,10 +22,17 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<header id="masthead" class="row site-header" role="banner">
-  
-	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-
+	<header id="masthead" class="site-header" role="banner">
+    <div class="row navbar">
+      <div class="large-12 columns">
+        <div class="row">
+          Logo and Search
+        </div>
+        <div class="row">
+  	     <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+        </div>
+      </div>
+    </div>
   </header><!-- #masthead -->
 
 	<div id="content" class="site-content">
