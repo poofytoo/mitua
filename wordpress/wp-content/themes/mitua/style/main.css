@@ -177,21 +177,37 @@ a.more-link {
 .who-we-are {
   background-color: #000;
   height: 100%; }
+  .who-we-are a.more-link {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block; }
   .who-we-are .row {
     height: 100%;
     position: relative; }
+    .who-we-are .row .columns {
+      display: inline-block;
+      float: none; }
   .who-we-are .text-graphic-container {
     height: 100%;
-    position: relative; }
+    position: relative;
+    text-align: center;
+    width: 13%; }
   .who-we-are .text-graphic {
     background-image: url("images/whoweare.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30px;
+    display: inline-block;
     height: 30px;
-    position: absolute;
+    width: 30px;
+    position: relative;
     top: 50%;
-    width: 30px; }
+    transform: translateY(-50%); }
+  .who-we-are .text-link-container {
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block; }
   .who-we-are .text-desc {
     color: #fff;
     padding: 10px; }
@@ -207,38 +223,48 @@ a.more-link {
 @keyframes fadein {
   from {
     opacity: 0; }
-
   to {
     opacity: 1; } }
-
 /* Firefox < 16 */
 @-moz-keyframes fadein {
   from {
     opacity: 0; }
-
   to {
     opacity: 1; } }
-
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
   from {
     opacity: 0; }
-
   to {
     opacity: 1; } }
-
 /* Internet Explorer */
 @-ms-keyframes fadein {
   from {
     opacity: 0; }
-
   to {
     opacity: 1; } }
-
 /* Opera < 12.1 */
 @-o-keyframes fadein {
   from {
     opacity: 0; }
-
   to {
     opacity: 1; } }
+@media (max-width: 642px) {
+  .who-we-are {
+    text-align: center; }
+    .who-we-are .text-link-container {
+      padding: 0px 40px 40px;
+      transform: none; }
+      .who-we-are .text-link-container a.more-link {
+        transform: none; }
+    .who-we-are .text-desc {
+      padding-left: 40px;
+      padding-right: 40px; }
+    .who-we-are .text-graphic-container {
+      padding: 50px 0px 0px;
+      width: 100%; }
+      .who-we-are .text-graphic-container .text-graphic {
+        top: 0;
+        transform: none; } }
+
+/*# sourceMappingURL=main.css.map */

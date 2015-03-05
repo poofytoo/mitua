@@ -37,16 +37,16 @@ get_header(); ?>
 
 <div class="who-we-are">
   <div class="row">
-  <div class="large-2 columns text-graphic-container">
+  <div class="medium-1 columns text-graphic-container">
     <div class="text-graphic">
     </div>
     &nbsp;
   </div>
-  <div class="large-6 columns text-desc">
+  <div class="medium-6 columns text-desc">
     <h3>Who We Are</h3>
     <p>The UA is a group of undergraduate students elected to represent the MIT student body and all its facets.</p>
   </div>
-  <div class="large-4 columns">
+  <div class="medium-4 columns text-link-container">
     <a class="more-link" href="">Meet the 2015 UA</a>
   </div>
 </div>
