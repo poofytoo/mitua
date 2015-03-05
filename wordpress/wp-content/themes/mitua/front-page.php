@@ -34,6 +34,7 @@ get_header(); ?>
     </div>
   </div>
 </div>
+
 <div class="who-we-are">
   <div class="row">
   <div class="large-2 columns text-graphic-container">
@@ -49,6 +50,18 @@ get_header(); ?>
     <a class="more-link" href="">Meet the 2015 UA</a>
   </div>
 </div>
+
+<div class="twitter">
+  <div class="row">
+    <div class="large-4 columns">
+
+    </div>
+    <div class="large-8 columns text-desc">
+      Our Public Relations Chair, Connie Huang, dishing out ice cream at the UGC-UA Toscanini's Study Break! #UA #UGC #MIT
+    </div>
+  </div>
+</div>
+
 <div class="footer">
 
 </div>

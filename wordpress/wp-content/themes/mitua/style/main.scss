@@ -1,5 +1,7 @@
 // main.scss
 
+$mit-red: #A31F34;
+
 html, body {
   padding: 0;
   margin: 0 !important;
@@ -7,7 +9,10 @@ html, body {
 
 body {
   background-color: #ccc;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  color: #eee;
+  font-weight: 200;
+  font-size: 14px;
 }
 
 a {
@@ -37,8 +42,9 @@ h3 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 14px;
-    font-weight: 300;
-    margin-bottom: 10px;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    margin-bottom: 6px;
 }
 
 .logo {
@@ -202,7 +208,7 @@ a.more-link {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
-  background-color: #A31F34;
+  background-color: $mit-red;
   font-size: 12px;
   font-weight: 100;
   padding: 5px 20px 3px 10px;
@@ -246,13 +252,20 @@ a.more-link {
 
   .text-desc {
     color: #fff;
-    padding: 20px;
-    font-weight: 100;
-    font-size: 13px;
+    padding: 10px;
 
     p {
       color: #999;
     }
+  }
+}
+
+.twitter {
+  background-color: $mit-red;
+  color: #eee;
+  
+  .text-desc {
+    padding: 80px;
   }
 }
 
