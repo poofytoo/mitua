@@ -17,6 +17,7 @@
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/style/foundation/css/foundation.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/style/main.css" media="screen" />
 
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400|Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
 <?php wp_head(); ?>
 </head>
 
@@ -25,8 +26,7 @@
 	<header id="masthead" class="site-header" role="banner">
     <div class="row navbar">
       <div class="large-12 columns">
-        <div class="row">
-          Logo and Search
+        <div class="row logo">
         </div>
         <div class="row">
   	     <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
