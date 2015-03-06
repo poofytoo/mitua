@@ -51,25 +51,25 @@ h3 {
   background-image: url('images/logo.png');
   background-size: 400px;
   background-repeat: no-repeat;
-  background-position: 30px bottom;
-  height: 100px;
+  background-position: 0px bottom;
+  height: 95px;
 }
 
 .site-header {
-  background-color: #333;
+  background-color: #2C2C2C;
   margin: 0;
+  border-top: 8px solid #111;
   max-width: 100%;
   font-family: Raleway, sans-serif;
 
   .navbar {
-    background-color: #111;
+    background-color: #2C2C2C;
     color: #fff;
   }
 
   ul {
     margin: 0;
     padding: 0;
-    position: relative;
   }
 
   .row > .menu-main-menu-container > ul > li {
@@ -168,11 +168,11 @@ h3 {
   background-repeat: no-repeat;
   background-position: center;
 
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
 }
 
 .feature-text-container {
@@ -238,6 +238,7 @@ a.more-link {
   .row {
     height: 100%;
     position: relative;
+
     .columns {
       display: inline-block;
       float: none;
@@ -268,6 +269,7 @@ a.more-link {
     top: 50%;
     transform: translateY(-50%);
     display: inline-block;
+    text-align: right;
   }
 
 
