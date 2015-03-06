@@ -24,15 +24,15 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
-    <div class="row navbar">
+    <div class="row navbar large-nav">
       <div class="large-12 columns">
         <div class="row logo">
         </div>
       </div>
     </div>
     <div class="row">
-         <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-        </div>
+     <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+    </div>
   </header><!-- #masthead -->
 
 	<div id="content" class="site-content">

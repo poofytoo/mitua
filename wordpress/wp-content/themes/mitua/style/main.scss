@@ -55,12 +55,29 @@ h3 {
   height: 95px;
 }
 
+.admin-bar {
+  .site-content {
+    padding-top: 105px;
+  }
+  .site-header {
+    top: 32px;
+  }
+}
+
+.site-content {
+  padding-top: 137px;
+}
+
 .site-header {
   background-color: #2C2C2C;
   margin: 0;
   border-top: 8px solid #111;
   max-width: 100%;
   font-family: Raleway, sans-serif;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+  width: 100%;
 
   .navbar {
     background-color: #2C2C2C;
@@ -154,6 +171,13 @@ h3 {
   }
 
   ul li ul li ul {
+    display: none;
+  }
+}
+
+.scroll-header {
+  border-top: 0px;
+  .large-nav {
     display: none;
   }
 }
