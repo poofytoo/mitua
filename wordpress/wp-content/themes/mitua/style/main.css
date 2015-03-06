@@ -3,7 +3,7 @@ html, body {
   margin: 0 !important; }
 
 body {
-  background-color: #ccc;
+  background-color: #000;
   font-family: 'Open Sans', sans-serif;
   color: #eee;
   font-weight: 200;
@@ -136,17 +136,25 @@ h3 {
 .feature {
   position: relative;
   overflow: hidden;
-  height: 380px;
-  background-color: #000; }
+  height: 360px;
+  background-color: #000;
+  -webkit-animation: fadein 0.4s ease;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.4s ease;
+  /* Firefox < 16 */
+  -ms-animation: fadein 0.4s ease;
+  /* Internet Explorer */
+  -o-animation: fadein 0.4s ease;
+  /* Opera < 12.1 */
+  animation: fadein 0.4s ease; }
 
 .feature-background {
-  height: 400px;
+  height: 380px;
   position: absolute;
   top: -10px;
   left: -10px;
   right: -10px;
   overflow: hidden;
-  opacity: 0.9;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -161,7 +169,7 @@ h3 {
 
 .feature-text-container {
   position: relative;
-  height: 380px;
+  height: 360px;
   -webkit-animation: fadein 0.8s ease;
   /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 0.8s ease;
@@ -181,11 +189,17 @@ h3 {
   -moz-transform: translateY(-50%);
   -o-transform: tranlslateY(-50%);
   transform: translateY(-50%);
-  max-width: 400px;
+  max-width: 500px;
   padding: 20px 0 16px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8); }
   .feature-text p {
-    color: #fff; }
+    color: #fff;
+    font-weight: 200;
+    font-size: 16px;
+    margin-bottom: 12px; }
+  .feature-text a {
+    text-shadow: none; }
 
 a.more-link {
   text-transform: uppercase;
@@ -249,7 +263,27 @@ a.more-link {
   background-color: #A31F34;
   color: #eee; }
   .twitter .text-desc {
-    padding: 80px; }
+    padding: 60px; }
+  .twitter .row .columns {
+    display: inline-block;
+    float: none;
+    height: 100%;
+    position: relative; }
+  .twitter .twitter-icon-column {
+    width: 0px;
+    height: 100%;
+    position: relative; }
+  .twitter .twitter-icon-container {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    display: inline-block; }
+  .twitter .twitter-icon {
+    background-image: url("images/twitter-icon.png");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    height: 40px;
+    width: 40px; }
 
 @keyframes fadein {
   from {
@@ -285,7 +319,8 @@ a.more-link {
     text-align: center; }
     .who-we-are .text-link-container {
       padding: 0px 40px 40px;
-      transform: none; }
+      transform: none;
+      text-align: center; }
       .who-we-are .text-link-container a.more-link {
         transform: none; }
     .who-we-are .text-desc {
