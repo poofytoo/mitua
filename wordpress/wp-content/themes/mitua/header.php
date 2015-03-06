@@ -28,11 +28,11 @@
       <div class="large-12 columns">
         <div class="row logo">
         </div>
-        <div class="row">
-  	     <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-        </div>
       </div>
     </div>
+    <div class="row">
+         <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+        </div>
   </header><!-- #masthead -->
 
 	<div id="content" class="site-content">
