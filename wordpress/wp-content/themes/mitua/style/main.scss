@@ -57,15 +57,26 @@ h3 {
 
 .admin-bar {
   .site-content {
-    padding-top: 105px;
+    //padding-top: 105px;
   }
   .site-header {
-    top: 32px;
+    //top: 32px;
   }
 }
 
-.site-content {
+.site-content-padding {
   padding-top: 137px;
+  position: relative;
+}
+
+.site-header-admin {
+  position: fixed;
+  top: -68px !important;
+}
+
+.site-header-fixed {
+  position: fixed;
+  top: -100px;
 }
 
 .site-header {
@@ -74,8 +85,7 @@ h3 {
   border-top: 8px solid #111;
   max-width: 100%;
   font-family: Raleway, sans-serif;
-  position: fixed;
-  top: 0px;
+  //position: fixed;
   z-index: 100;
   width: 100%;
 
@@ -336,9 +346,6 @@ a.more-link {
   background-color: $mit-red;
   color: #eee;
   
-  .text-desc {
-    padding: 60px;
-  }
   .row {
     display: table;
     .columns {
@@ -348,21 +355,47 @@ a.more-link {
     }
   }
 
+  .text-desc {
+    padding: 80px 40px;
+  }
+
   .twitter-icon-column {
     position: relative;
     vertical-align: middle;
   }
+
   .twitter-icon-container {
     position: relative; 
     vertical-align: middle;
+    text-align: center;
   }
 
   .twitter-icon {
     background-image: url('images/twitter-icon.png');
     background-repeat: no-repeat;
+    background-position: 10px center;
     background-size: 40px;
     height: 40px;
-    width: 40px;
+    width: 50px;
+    display: inline-block;
+  }
+
+  .twitter-photo {
+    background-image:url('https://pbs.twimg.com/media/BleZsQ8CUAAZ8lW.jpg:medium');
+    width: 100%;
+    height: 100%;
+  }
+
+  a {
+    opacity: 0.6;
+    -webkit-transition: opacity 0.2s; 
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 1;
+      -webkit-transition: opacity 0.2s; 
+      transition: opacity 0.2s;
+    }
   }
 }
 
@@ -374,7 +407,7 @@ a.more-link {
 
   h1 {
     color: #222;
-    margin-bottom: 20px;
+    margin: 20px 0 30px;
   }
   h2 {
   }

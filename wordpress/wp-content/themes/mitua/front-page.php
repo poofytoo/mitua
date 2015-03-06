@@ -67,10 +67,12 @@ get_header(); ?>
 
 <div class="twitter">
   <div class="row">
-    <div class="medium-2 columns">
-      &nbsp;
+    <div class="medium-3 columns">
+      <div class="twitter-photo">
+        &nbsp;
+      </div>
     </div>
-    <div class="medium-8 columns text-desc">
+    <div class="medium-7 columns text-desc">
       Our Public Relations Chair, Connie Huang, dishing out ice cream at the UGC-UA Toscanini's Study Break! #UA #UGC #MIT
     </div>
     <div class="medium-2 columns twitter-icon-column">
@@ -78,7 +80,7 @@ get_header(); ?>
         <div class="twitter-icon">
         </div>
         <div class="twitter-link">
-          <a href="http://twitter.com">@mitUA</a>
+          <a href="http://twitter.com/TheMITUA">@TheMITUA</a>
         </div>
       </div>
     </div>
