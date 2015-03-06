@@ -340,24 +340,21 @@ a.more-link {
     padding: 60px;
   }
   .row {
+    display: table;
     .columns {
-      display: inline-block;
+      display: table-cell;
       float: none;
-      height: 100%;
       position: relative;
     }
   }
 
   .twitter-icon-column {
-    width: 0px;
-    height: 100%;
     position: relative;
+    vertical-align: middle;
   }
   .twitter-icon-container {
-    top: 50%;
     position: relative; 
-    transform: translateY(-50%);
-    display: inline-block;
+    vertical-align: middle;
   }
 
   .twitter-icon {

@@ -264,20 +264,18 @@ a.more-link {
   color: #eee; }
   .twitter .text-desc {
     padding: 60px; }
-  .twitter .row .columns {
-    display: inline-block;
-    float: none;
-    height: 100%;
-    position: relative; }
+  .twitter .row {
+    display: table; }
+    .twitter .row .columns {
+      display: table-cell;
+      float: none;
+      position: relative; }
   .twitter .twitter-icon-column {
-    width: 0px;
-    height: 100%;
-    position: relative; }
-  .twitter .twitter-icon-container {
-    top: 50%;
     position: relative;
-    transform: translateY(-50%);
-    display: inline-block; }
+    vertical-align: middle; }
+  .twitter .twitter-icon-container {
+    position: relative;
+    vertical-align: middle; }
   .twitter .twitter-icon {
     background-image: url("images/twitter-icon.png");
     background-repeat: no-repeat;
