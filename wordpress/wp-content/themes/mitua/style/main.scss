@@ -270,11 +270,14 @@ a.more-link {
   background-color: $mit-red;
   font-size: 12px;
   font-weight: 100;
-  padding: 5px 20px 3px 10px;
+  padding: 5px 30px 3px 10px;
   -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
   box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
   -webkit-transition: all 0.1s; 
   transition: all 0.1s;
+  background-image: url('images/link-arrow.png');
+  background-repeat: no-repeat;
+  background-position: center right;
 
   &:hover {
     background-color: #D92B47;
