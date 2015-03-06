@@ -366,6 +366,26 @@ a.more-link {
   }
 }
 
+.page-content {
+  background-color: #f1f0ec;
+  color: #333;
+  padding: 30px;
+  min-height: 600px;
+
+  h1 {
+    color: #222;
+    margin-bottom: 20px;
+  }
+  h2 {
+  }
+  h3 {
+    margin-top: 30px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+}
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }

@@ -10,17 +10,15 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		// THIS PAGE IS THE SINGLE BLOGGIDTY POST I THINK
-
-		<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php 
-
-
-				get_template_part( 'content', 'single' ); ?>
-
-		<?php endwhile; // end of the loop. ?>
-
+		  <div class="content">
+        <div class="row">
+          <div class="medium-12 columns">
+            <?php while ( have_posts() ) : the_post(); ?>
+              <?php get_template_part( 'content', 'single' ); ?>
+            <?php endwhile; // end of the loop. ?>
+          </div>
+        </div>
+      </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
