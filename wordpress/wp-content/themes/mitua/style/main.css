@@ -108,7 +108,8 @@ h3 {
 .feature {
   position: relative;
   overflow: hidden;
-  height: 380px; }
+  height: 380px;
+  background-color: #000; }
 
 .feature-background {
   height: 400px;
@@ -117,6 +118,7 @@ h3 {
   left: -10px;
   right: -10px;
   overflow: hidden;
+  opacity: 0.9;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
