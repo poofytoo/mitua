@@ -8,15 +8,14 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 	<div class="entry-meta">
-		<?php mitua_posted_on(); ?>
+    Updated on <?php the_modified_date(); ?>
 	</div><!-- .entry-meta -->
 
 	<div class="entry-content">
 		<?php the_content(); ?>
 	</div><!-- .entry-content -->
-	
-	<footer class="entry-footer">
-		<!-- <?php mitua_entry_footer(); ?> -->
-	</footer><!-- .entry-footer -->
-	
+
+  <div class="edit-link-container">
+    <?php edit_post_link( __( 'Edit this Post', 'mitua' ), '<span class="edit-link">', '</span>' ); ?>
+  </div>
 </article><!-- #post-## -->

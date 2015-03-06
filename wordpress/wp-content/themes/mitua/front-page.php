@@ -68,9 +68,11 @@ get_header(); ?>
 <div class="twitter">
   <div class="row">
     <div class="medium-4 columns">
+      <a href="http://twitter.com/TheMITUA">
       <div class="twitter-photo">
         &nbsp;
       </div>
+      </a>
     </div>
     <div class="medium-7 columns text-desc">
       Our Public Relations Chair, Connie Huang, dishing out ice cream at the UGC-UA Toscanini's Study Break! #UA #UGC #MIT
@@ -85,10 +87,6 @@ get_header(); ?>
       </div>
     </div>
   </div>
-</div>
-
-<div class="footer">
-
 </div>
 
 <?php get_footer(); ?>

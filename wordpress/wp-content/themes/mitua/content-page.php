@@ -20,8 +20,7 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php edit_post_link( __( 'Edit', 'mitua' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-footer -->
+	<div class="edit-link-container">
+		<?php edit_post_link( __( 'Edit this Page', 'mitua' ), '<span class="edit-link">', '</span>' ); ?>
+	</div>
 </article><!-- #post-## -->

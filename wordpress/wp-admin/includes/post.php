@@ -1297,8 +1297,11 @@ function _wp_post_thumbnail_html( $thumbnail_id = null, $post = null ) {
 		$content_width = $old_content_width;
 	}
 
-	$feature_message_warning = "Before setting the featured image, please make sure you follow the following:";
-	$feature_message_warning .= "<ul><li>No Nudity</li><li>No Stupidity</li></ul>";
+	$feature_message_warning = "Before setting the featured image for the UA website, please make sure you follow the following guidelines:";
+	$feature_message_warning .= "<ul><li>Image should be <strong>AT LEAST</strong> 960px by 600px</li>";
+	$feature_message_warning .= "<li><strong>NO TEXT</strong> on image</li>";
+	$feature_message_warning .= "<li><strong>NO STOCK IMAGES</strong> or unrelated images</li>";
+	$feature_message_warning .= "Please remember that your image will be front and center of the UA website, so keep it classy, folks!";
 	$content = $feature_message_warning . $content;
 	/**
 	 * Filter the admin post thumbnail HTML markup to return.
