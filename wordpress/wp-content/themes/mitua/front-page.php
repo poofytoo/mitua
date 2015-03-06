@@ -67,7 +67,7 @@ get_header(); ?>
 
 <div class="twitter">
   <div class="row">
-    <div class="medium-3 columns">
+    <div class="medium-4 columns">
       <div class="twitter-photo">
         &nbsp;
       </div>
@@ -75,7 +75,7 @@ get_header(); ?>
     <div class="medium-7 columns text-desc">
       Our Public Relations Chair, Connie Huang, dishing out ice cream at the UGC-UA Toscanini's Study Break! #UA #UGC #MIT
     </div>
-    <div class="medium-2 columns twitter-icon-column">
+    <div class="medium-1 columns twitter-icon-column">
       <div class="twitter-icon-container">
         <div class="twitter-icon">
         </div>

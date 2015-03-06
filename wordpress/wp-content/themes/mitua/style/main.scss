@@ -356,7 +356,7 @@ a.more-link {
   }
 
   .text-desc {
-    padding: 80px 40px;
+    padding: 80px 20px 80px 60px;
   }
 
   .twitter-icon-column {
@@ -384,6 +384,8 @@ a.more-link {
     background-image:url('https://pbs.twimg.com/media/BleZsQ8CUAAZ8lW.jpg:medium');
     width: 100%;
     height: 100%;
+    position: absolute;
+    background-size: cover;
   }
 
   a {
