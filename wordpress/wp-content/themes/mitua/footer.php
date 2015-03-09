@@ -17,6 +17,7 @@
       <div class="medium-5 columns">
         <h4>MIT Undergraduate Association</h4>
         <p>The UA is a group of undergraduate students elected to represent the MIT student body and all its facets.</p>
+      <div class="fb-like" data-href="https://www.facebook.com/undergraduateassociation" data-layout="standard" data-action="like" data-colorscheme="dark" data-show-faces="false" data-share="false"></div>
       </div>
       <div class="medium-4 columns">
         <h4>Student Life</h4>
@@ -34,7 +35,7 @@
 	</footer><!-- #colophon -->
   <div class="row">
     <div class="medium 12 columns final-word">
-      &copy; Copyright 2012 MIT Undergraduate Association
+      &copy; Copyright 2015 MIT Undergraduate Association
     </div>
   </div>
 </div><!-- #page -->
@@ -43,6 +44,6 @@
 
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/behavior.js"></script>
-
+<script src="http://victorhh.com/antoniojs/antonio.js"></script>
 </body>
 </html>

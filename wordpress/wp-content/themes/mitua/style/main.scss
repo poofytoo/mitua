@@ -12,7 +12,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #eee;
   font-weight: 200;
-  font-size: 14px;
 }
 
 a {
@@ -110,20 +109,24 @@ h4 {
     color: #fff;
   }
 
+  // MENU TOP LEVEL
+
   ul {
     margin: 0;
     padding: 0;
   }
 
-  .current-menu-item, .current-menu-ancestor {
-    a {
-      border-bottom-color: #fff !important;
-      -webkit-transition: all 0.2s; 
-      transition: all 0.2s;
+  .menu-main-menu-container {
+    .current-menu-ancestor {
+      a {
+        border-bottom-color: #fff !important;
+        -webkit-transition: all 0.2s; 
+        transition: all 0.2s;
+      }
     }
 
-    .current-menu-item {
-      a {
+    & > ul > li > ul > li.current-menu-item {
+       & > a {
         color: $mit-red !important;
       }  
     }
@@ -168,6 +171,8 @@ h4 {
     }
   }
 
+  // SUB MENU
+
   .row > .menu-main-menu-container > ul > li > ul {
     z-index: 10;
     -webkit-transition: opacity 0.2s; 
@@ -177,7 +182,7 @@ h4 {
     position: absolute;
     left: 0px;
     width: 100%;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.95);
     padding: 25px 20px 20px;
 
     li {
@@ -204,6 +209,7 @@ h4 {
         color: #333;
         border-bottom: none;
         width: 300px;
+        z-index: 9999;
       }
     }
     
@@ -212,8 +218,36 @@ h4 {
     }
   }
 
-  ul li ul li ul {
-    display: none;
+  // SUB SUB MENU
+
+  .row > .menu-main-menu-container ul li ul li ul {
+    position: absolute;
+    top: 0;
+    left: 500px;
+    width: calc(100% - 500px);
+    width: -webkit-calc(100% - 500px);
+    pointer-events: none;
+
+    li:first-child {  
+      padding: 28px 0 0 0;
+    }
+
+    li {
+      padding: 0;
+      display: block;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 69em;
+      pointer-events: auto;
+      margin-bottom: 0;
+
+      a {
+        color: #999;
+        margin-left: 20px;
+        font-size: 11px;
+      }
+    }
   }
 }
 
@@ -355,6 +389,7 @@ a.more-link {
     .columns {
       display: inline-block;
       float: none;
+      font-size: 14px;
     }
   }
 
@@ -388,7 +423,7 @@ a.more-link {
 
   .text-desc {
     color: #fff;
-    padding: 10px;
+    padding: 14px;
 
     p {
       color: #999;
@@ -589,6 +624,13 @@ footer {
 
   a {
     color: #ddd;
+    white-space: nowrap;
+  }
+
+  .fb_iframe_widget {
+    overflow: hidden;
+    width: 100%;
+    opacity: 0.8;
   }
 }
 
