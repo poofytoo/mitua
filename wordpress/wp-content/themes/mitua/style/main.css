@@ -153,27 +153,13 @@ h4 {
     .site-header .row > .menu-main-menu-container > ul > li > ul:hover {
       display: block; }
   .site-header .row > .menu-main-menu-container ul li ul li ul {
-    position: absolute;
-    top: 0;
-    left: 500px;
-    width: calc(100% - 500px);
-    width: -webkit-calc(100% - 500px);
-    pointer-events: none; }
-    .site-header .row > .menu-main-menu-container ul li ul li ul li:first-child {
-      padding: 28px 0 0 0; }
-    .site-header .row > .menu-main-menu-container ul li ul li ul li {
-      padding: 0;
-      display: block;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 69em;
-      pointer-events: auto;
-      margin-bottom: 0; }
-      .site-header .row > .menu-main-menu-container ul li ul li ul li a {
-        color: #999;
-        margin-left: 20px;
-        font-size: 11px; }
+    margin-top: 5px; }
+    .site-header .row > .menu-main-menu-container ul li ul li ul li a {
+      color: #666;
+      margin-left: 5px;
+      font-size: 11px; }
+    .site-header .row > .menu-main-menu-container ul li ul li ul li.current-menu-item a {
+      color: #a31f34; }
 
 .scroll-header {
   border-top: 0px; }

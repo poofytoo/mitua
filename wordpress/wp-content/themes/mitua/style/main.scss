@@ -221,31 +221,18 @@ h4 {
   // SUB SUB MENU
 
   .row > .menu-main-menu-container ul li ul li ul {
-    position: absolute;
-    top: 0;
-    left: 500px;
-    width: calc(100% - 500px);
-    width: -webkit-calc(100% - 500px);
-    pointer-events: none;
-
-    li:first-child {  
-      padding: 28px 0 0 0;
-    }
+    margin-top: 5px;
 
     li {
-      padding: 0;
-      display: block;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 69em;
-      pointer-events: auto;
-      margin-bottom: 0;
 
       a {
-        color: #999;
-        margin-left: 20px;
+        color: #666;
+        margin-left: 5px;
         font-size: 11px;
+      }
+
+      &.current-menu-item {
+        a { color: $mit-red; }
       }
     }
   }
