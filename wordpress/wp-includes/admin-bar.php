@@ -837,8 +837,22 @@ function _admin_bar_bump_cb() { ?>
 	html { margin-top: 32px !important; }
 	* html body { margin-top: 32px !important; }
 	@media screen and ( max-width: 782px ) {
-		html { margin-top: 46px !important; }
-		* html body { margin-top: 46px !important; }
+
+		/*
+		jesus wordpress, why are you doing this. why did you put this here. 
+		this doesn't even make sense. this is the worst function.
+		bump?! what are you, crazy!?
+		please, stop this. 
+
+		love,
+		a concerned developer
+
+		p.s. if you can explain this to me, please email me at victorhung92@gmail.com. 
+		I'd love to hear your thoughts! I'm not actually that angry
+		*/
+
+		html { margin-top: 0 !important; }
+		* html body { margin-top: 0 !important; }
 	}
 </style>
 <?php

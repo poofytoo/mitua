@@ -323,7 +323,7 @@ a.more-link {
   background-color: $mit-red;
   font-size: 12px;
   font-weight: 100;
-  padding: 5px 30px 3px 10px;
+  padding: 3px 32px 3px 14px;
   -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
   box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
   -webkit-transition: all 0.1s; 
@@ -475,6 +475,7 @@ a.more-link {
     background-image: url('https://pbs.twimg.com/media/BleZsQ8CUAAZ8lW.jpg:medium');
     width: 100%;
     height: 100%;
+    background-position: center;
     position: absolute;
     background-size: cover;
     -webkit-transition: all 0.2s; 
@@ -683,7 +684,91 @@ footer {
       }
     }
   }
+
+  .twitter {
+    .row {
+      display: block;
+      .full-wide {
+        padding: 0 0 20px !important;
+      }
+
+      .columns {
+        display: inline-block;
+        padding: 10px 10px 20px;
+        position: relative;
+        text-align: center;
+
+        a.twitter-photo-link {
+          display: block;
+          height: 200px;
+        }
+
+        .twitter-photo {
+          display: block;
+          width: 100%;
+          height: 200px;
+        }
+      }
+    }
+  }
+
+  .site-content-padding {
+    padding: 0;
+    position: relative;
+  }
+
+  .site-header-admin {
+    position: relative;
+    top: 0 !important;
+  }
+
+  .site-header-fixed {
+    position: relative;
+  }
+
+  header#masthead {
+    ul {
+      border-top: 1px solid #555;
+      z-index: 100000;
+      overflow-x: hidden;
+      li {
+        display: inline-block;
+        width: 50%;
+        margin-right: 0;
+        background-color: #444;
+        float: left;
+        
+        &:nth-child(odd) {
+          a {
+            border-right: 1px solid #555;
+          }
+        }
+
+        a {
+          border-bottom: 1px solid #555;
+        }
+      }
+    }
+    .logo {
+      background-size: 90%;
+      background-position: 30% center;
+      height: 24vw;
+    }
+  }
+
+  footer {
+    .fb-like {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  #wpadminbar {
+    display: none;
+  }
 }
+
+
 
 @media (max-width: 69em) {
   .site-header .row > .menu-main-menu-container > ul > li > ul {

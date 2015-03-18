@@ -36,8 +36,10 @@
 	<header id="masthead" class="site-header" role="banner">
     <div class="row navbar large-nav">
       <div class="large-12 columns">
+        <a href="/">
         <div class="row logo">
         </div>
+        </a>
       </div>
     </div>
     <div class="row">

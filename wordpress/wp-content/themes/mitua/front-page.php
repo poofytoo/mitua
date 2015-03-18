@@ -67,8 +67,8 @@ get_header(); ?>
 
 <div class="twitter">
   <div class="row">
-    <div class="medium-4 columns">
-      <a href="http://twitter.com/TheMITUA">
+    <div class="medium-4 columns full-wide">
+      <a class="twitter-photo-link" href="http://twitter.com/TheMITUA">
       <div class="twitter-photo">
         &nbsp;
       </div>
