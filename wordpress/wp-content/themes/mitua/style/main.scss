@@ -749,6 +749,28 @@ footer {
         }
       }
     }
+
+    .row > .menu-main-menu-container > ul > li {
+      a {
+        // pointer-events: none;
+      }
+
+      &:hover {
+        ul {
+          display: none;
+        }
+      }
+
+      &:focus { 
+        background-color: blue;
+
+        ul {
+          display: block;
+
+        }
+      }
+    }
+
     .logo {
       background-size: 90%;
       background-position: 30% center;

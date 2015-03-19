@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
   var headerHeight = 99;
 
   $(window).scroll(function() {
@@ -18,5 +18,19 @@ $(document).ready(function() {
         $('.site-header').removeClass('site-header-admin');
       }
     }
+  });
+
+  $(window).resize(function() {
+    recalculateWindow();
   })
+
+  function recalculateWindow() {
+    if ($(window).width() <= 642) {
+      // $('header').find('ul').find('a').attr("href", "javascript:void(0)")
+    } else {
+
+    }
+  }
+
+  recalculateWindow();
 });

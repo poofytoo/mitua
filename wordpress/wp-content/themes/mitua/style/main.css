@@ -522,7 +522,7 @@ footer {
         height: 200px; }
 
   .site-content-padding {
-    padding: 0;
+    /* padding: 0; */
     position: relative; }
 
   .site-header-admin {
@@ -530,7 +530,7 @@ footer {
     top: 0 !important; }
 
   .site-header-fixed {
-    position: relative; }
+    /* position: relative; */ }
 
   header#masthead ul {
     border-top: 1px solid #555;
@@ -546,6 +546,12 @@ footer {
         border-right: 1px solid #555; }
       header#masthead ul li a {
         border-bottom: 1px solid #555; }
+  header#masthead .row > .menu-main-menu-container > ul > li:hover ul {
+    display: none; }
+  header#masthead .row > .menu-main-menu-container > ul > li:focus {
+    background-color: blue; }
+    header#masthead .row > .menu-main-menu-container > ul > li:focus ul {
+      display: block; }
   header#masthead .logo {
     background-size: 90%;
     background-position: 30% center;
