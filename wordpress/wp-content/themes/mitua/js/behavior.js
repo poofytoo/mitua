@@ -31,6 +31,19 @@ $(function() {
 
     }
   }
+  $(document).ready(function() {
+    $('#menu-main-menu > .menu-item-has-children > a').click(function(event) {
+      event.preventDefault();
+      var submenu = $(this).parent().children('.sub-menu');
+      if (submenu.hasClass('open')) {
+        submenu.slideUp().removeClass('open');
+      } else {
+       submenu.slideDown();
+       submenu.addClass('open');
+      }
+      
+    })
+  })
 
   recalculateWindow();
 });

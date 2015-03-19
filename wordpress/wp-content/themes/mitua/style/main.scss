@@ -193,7 +193,7 @@ h4 {
       margin-right: auto;
       margin-top: 0;
       margin-bottom: 0;
-      max-width: 69em;
+      max-width: 84.5em;
 
       li:before, li:after {
         content: " ";
@@ -726,6 +726,23 @@ footer {
     position: relative;
   }
 
+  .site-header .row > .menu-main-menu-container > ul > li > ul {
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+    display: none;
+  }
+
+  .site-header .row > .menu-main-menu-container > ul > li:hover > ul {
+    visibility: inherit;
+    opacity: inherit;
+    -webkit-transition: none;
+    transition: none;
+    /* visibility: visible; */
+    /* opacity: 1; */
+    /* -webkit-transition: opacity 0.2s; */
+    /* transition: opacity 0.2s; */
+  }
   header#masthead {
     ul {
       border-top: 1px solid #555;
@@ -747,6 +764,23 @@ footer {
         a {
           border-bottom: 1px solid #555;
         }
+        ul li {
+          background: none;
+          width: 100%;
+          display: block;
+          a {
+            border: 0;
+          }
+          &:nth-child(odd) {
+            a {
+              border: 0;
+            }
+          }
+          .sub-menu {
+            width: 100%;
+            display: block;
+          }
+        }
       }
     }
 
@@ -756,8 +790,8 @@ footer {
       }
 
       &:hover {
-        ul {
-          display: none;
+        & > ul {
+          // visibility: hidden;
         }
       }
 
